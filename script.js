@@ -11,7 +11,7 @@ function staticLoadPlaces() {
     {
       text: "RedBox was clicked",
       location: {
-        lat: "49.2026165925665",
+        lat: "49.2126165925665",
         lng: "9.243124311009371",
       },
       color: "red",
@@ -36,12 +36,27 @@ function renderPlaces(places) {
     model.setAttribute("color", place.color);
     model.setAttribute("scale", place.scale);
     model.setAttribute("position", place.position);
+    model.setAttribute("clicker", true);
 
-    model.addEventListener("click", function () {
-      const div = document.querySelector(".instructions");
-      div.innerText = place.text;
-    });
+    // model.addEventListener("click", function () {
+    //   const div = document.querySelector(".instructions");
+    //   div.innerText = place.text;
+    // });
 
     scene.appendChild(model);
   });
 }
+
+import "https://aframe.io/releases/1.3.0/aframe.min.js";
+import "https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js";
+import "https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js";
+
+AFRAME.registerComponent("clicker", {
+  init: function () {
+    this.el.addEventListener("click", (e) => {
+      alert("Box clicked!");
+      const div = document.querySelector(".instructions");
+      div.innerText = "Box clicked!";
+    });
+  },
+});
