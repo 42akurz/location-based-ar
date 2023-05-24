@@ -11,7 +11,8 @@
       type="text/javascript"
       src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
     ></script>
-    <script>
+    <script src="./script.js"></script>
+    <!-- <script>
       AFRAME.registerComponent("clicker", {
         init: function () {
           this.el.addEventListener("click", (e) => {
@@ -19,11 +20,11 @@
           });
         },
       });
-    </script>
+    </script> -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    <div class="centered instructions"></div>
+    <div class="centered instructions">Nothing clicked</div>
     <a-scene
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
@@ -32,10 +33,11 @@
       <a-camera gps-new-camera rotation-reader></a-camera>
       <a-box
         gps-new-entity-place="latitude: 49.2026165925665; longitude: 9.243124311009371"
-        color="red"
-        scale="5 5 5"
+        color="yellow"
+        scale="15 15 15"
+        position="0 20 0"
       ></a-box>
-      <a-box
+      <!-- <a-box
         gps-new-entity-place="latitude: 49.202635262707105; longitude: 9.242665617175085"
         color="yellow"
         scale="10 10 10"
@@ -44,8 +46,7 @@
         gps-new-entity-place="latitude: 49.202417880418714; longitude: 9.242755061011513"
         color="blue"
         scale="5 5 5"
-        clicker
-      ></a-box>
+      ></a-box> -->
     </a-scene>
   </body>
 </html>
