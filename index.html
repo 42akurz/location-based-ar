@@ -14,6 +14,10 @@
             const div = document.querySelector(".instructions");
             div.innerText = "Box got clicked";
           });
+          this.el.addEventListener("touchstart", (e) => {
+            const div = document.querySelector(".instructions");
+            div.innerText = "Box got clicked";
+          });
         },
       });
     </script>
@@ -27,22 +31,13 @@
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
       renderer="antialias: true; alpha: true"
     >
-      <!-- <a-camera gps-new-camera rotation-reader></a-camera>
+      <a-camera gps-new-camera rotation-reader></a-camera>
       <a-box
+        id="test-box"
         gps-new-entity-place="latitude: 49.2026165925665; longitude: 9.243124311009371"
         color="yellow"
-        scale="15 15 15"
-        position="0 12 0"
-        clicker
-      ></a-box> -->
-
-      <a-camera
-        gps-new-camera="simulateLatitude: 51.049; simulateLongitude: -0.723"
-      ></a-camera>
-      <a-box
-        gps-new-entity-place="latitude: 51.0596; longitude: -0.7170"
-        color="red"
-        scale="200 200 200"
+        scale="10 10 10"
+        position="0 5 0"
         clicker
       ></a-box>
     </a-scene>

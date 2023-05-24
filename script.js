@@ -1,13 +1,14 @@
 window.onload = () => {
-  // const button = document.querySelector('button[data-action="change"]');
-  // button.innerText = '﹖';
-
   let places = staticLoadPlaces();
   renderPlaces(places);
 
   document.getElementById("test-button").addEventListener("click", () => {
     const div = document.querySelector(".instructions");
     div.innerText = "Button got clicked";
+  });
+  document.getElementById("test-box").addEventListener("click", () => {
+    const div = document.querySelector(".instructions");
+    div.innerText = "Yellow box got clicked";
   });
 };
 
@@ -42,11 +43,6 @@ function renderPlaces(places) {
     model.setAttribute("scale", place.scale);
     model.setAttribute("position", place.position);
     model.setAttribute("clicker", true);
-
-    // model.addEventListener("click", function () {
-    //   const div = document.querySelector(".instructions");
-    //   div.innerText = place.text;
-    // });
 
     scene.appendChild(model);
   });
