@@ -17,7 +17,7 @@
         init: function () {
           this.el.addEventListener("click", (e) => {
             const div = document.querySelector(".instructions");
-            div.innerText = "Clicked";
+            div.innerText = "Box got clicked";
           });
         },
       });
@@ -25,7 +25,8 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    <div class="centered instructions">Nothing clicked</div>
+    <div class="centered instructions">Havent been clicked</div>
+    <button id="test-button">Click me</button>
     <a-scene
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"

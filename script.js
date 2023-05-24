@@ -4,6 +4,11 @@ window.onload = () => {
 
   let places = staticLoadPlaces();
   renderPlaces(places);
+
+  document.getElementById("test-button").addEventListener("click", () => {
+    const div = document.querySelector(".instructions");
+    div.innerText = "Button got clicked";
+  });
 };
 
 function staticLoadPlaces() {
