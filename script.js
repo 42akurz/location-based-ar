@@ -16,7 +16,7 @@ function staticLoadPlaces() {
       },
       color: "red",
       scale: "20 20 20",
-      position: "0 30 0",
+      position: "0 0 0",
     },
   ];
 }
@@ -46,17 +46,3 @@ function renderPlaces(places) {
     scene.appendChild(model);
   });
 }
-
-import "https://aframe.io/releases/1.3.0/aframe.min.js";
-import "https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js";
-import "https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js";
-
-AFRAME.registerComponent("clicker", {
-  init: function () {
-    this.el.addEventListener("click", (e) => {
-      alert("Box clicked!");
-      const div = document.querySelector(".instructions");
-      div.innerText = "Box clicked!";
-    });
-  },
-});
