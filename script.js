@@ -16,12 +16,12 @@ function staticLoadPlaces() {
     {
       text: "RedBox was clicked",
       location: {
-        lat: "49.2126165925665",
-        lng: "9.243124311009371",
+        lat: "49.2036165925665",
+        lng: "9.244124311009371",
       },
       color: "red",
       scale: "20 20 20",
-      position: "0 0 0",
+      position: "0 10 0",
     },
   ];
 }
