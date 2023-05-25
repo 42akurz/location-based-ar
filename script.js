@@ -40,28 +40,18 @@ function staticLoadPlaces() {
     {
       text: "RedBox was clicked",
       location: {
-        lat: "49.2036165925665",
-        lng: "9.244124311009371",
+        lat: "49.202426",
+        lng: "9.242782",
       },
       color: "red",
-      scale: "20 20 20",
-      position: "0 10 0",
-    },
-    {
-      text: "RedBox was clicked",
-      location: {
-        lat: "49.203024",
-        lng: "9.242615",
-      },
-      color: "red",
-      scale: "10 10 10",
-      position: "0 10 0",
+      scale: "5 5 5",
+      position: "0 0 0",
     },
     {
       text: "GreenBox was clicked",
       location: {
-        lat: "49.202420",
-        lng: "9.242717",
+        lat: "49.202424",
+        lng: "9.242737",
       },
       color: "green",
       scale: "5 5 5",
@@ -70,12 +60,12 @@ function staticLoadPlaces() {
     {
       text: "YellowBox was clicked",
       location: {
-        lat: "49.203257",
-        lng: "9.242271",
+        lat: "49.202412",
+        lng: "9.242690",
       },
       color: "yellow",
       scale: "5 5 5",
-      position: "0 0 0",
+      position: "0 10 0",
     },
   ];
 }
