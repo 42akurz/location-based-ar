@@ -47,6 +47,36 @@ function staticLoadPlaces() {
       scale: "20 20 20",
       position: "0 10 0",
     },
+    {
+      text: "RedBox was clicked",
+      location: {
+        lat: "49.203024",
+        lng: "9.242615",
+      },
+      color: "red",
+      scale: "10 10 10",
+      position: "0 10 0",
+    },
+    {
+      text: "GreenBox was clicked",
+      location: {
+        lat: "49.202420",
+        lng: "9.242717",
+      },
+      color: "green",
+      scale: "5 5 5",
+      position: "0 5 0",
+    },
+    {
+      text: "YellowBox was clicked",
+      location: {
+        lat: "49.203257",
+        lng: "9.242271",
+      },
+      color: "yellow",
+      scale: "5 5 5",
+      position: "0 0 0",
+    },
   ];
 }
 
