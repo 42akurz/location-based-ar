@@ -4,7 +4,7 @@ window.onload = () => {
 
   document.getElementById("button-1").addEventListener("click", () => {
     const div = document.querySelector(".instructions");
-    if (div.style.visibility === "visible") {
+    if (div.style.visibility === "visible" && div.innerText === "Button 1 got clicked") {
       div.style.visibility = "hidden";
     } else {
       div.innerText = "Button 1 got clicked";
@@ -13,7 +13,7 @@ window.onload = () => {
   });
   document.getElementById("button-2").addEventListener("click", () => {
     const div = document.querySelector(".instructions");
-    if (div.style.visibility === "visible") {
+    if (div.style.visibility === "visible" && div.innerText === "Button 2 got clicked") {
       div.style.visibility = "hidden";
     } else {
       div.innerText = "Button 2 got clicked";
@@ -22,7 +22,7 @@ window.onload = () => {
   });
   document.getElementById("button-3").addEventListener("click", () => {
     const div = document.querySelector(".instructions");
-    if (div.style.visibility === "visible") {
+    if (div.style.visibility === "visible" && div.innerText === "Button 3 got clicked") {
       div.style.visibility = "hidden";
     } else {
       div.innerText = "Button 3 got clicked";
